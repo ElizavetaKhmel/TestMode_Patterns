@@ -14,11 +14,11 @@ import static ru.netology.testmode.data.DataGenerator.*;
 import static ru.netology.testmode.data.DataGenerator.Registration.getRegisteredUser;
 import static ru.netology.testmode.data.DataGenerator.Registration.getUser;
 
-class AuthTest {
+public class AuthTest {
 
     @BeforeEach
     void setup() {
-        open("http://localhost:9999/");
+        open("http://0.0.0.0:9999/");
     }
 
     @Test
