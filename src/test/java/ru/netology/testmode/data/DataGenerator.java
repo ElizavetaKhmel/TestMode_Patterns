@@ -6,6 +6,7 @@ import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import lombok.Value;
+import lombok.val;
 
 import java.util.Locale;
 
@@ -33,12 +34,14 @@ public class DataGenerator {
                 .then() // "тогда ожидаем"
                 .statusCode(200); // код 200 OK
     }
+
+
     public static String getRandomLogin() {
         return faker.name().firstName();
     }
 
     public static String getRandomPassword() {
-        return faker.name().firstName();
+        return faker.name().lastName();
     }
 
     public static class Registration {
