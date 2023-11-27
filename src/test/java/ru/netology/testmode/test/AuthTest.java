@@ -20,6 +20,7 @@ class AuthTest {
     void setup() {
         open("http://localhost:9999/");
     }
+
     @Test
     @DisplayName("Should successfully login with active registered user")
     void shouldSuccessfulLoginIfRegisteredActiveUser() {
